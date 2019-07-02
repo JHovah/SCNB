@@ -52,5 +52,14 @@ class EditEducationController : FormViewController {
                 })
         }
         
+        form +++
+            Section()
+            <<< ButtonRow("Save") { row in
+                row.title = "Save"
+                }.cellUpdate({ (button, row) in
+                    button.backgroundColor = UIColor.rgb(red: 136, green: 206, blue: 235)
+                    button.textLabel?.textColor = .white
+                })
+        
     }
 }
